@@ -1,0 +1,19 @@
+<div class="col-md-4 mx-auto">
+    <div class="card">
+        <div class="card-body">
+            <form action="/links/editar/{{coche.id}}" method="POST">
+                <div class="form-group">
+                    <input type="text" name="modelo" class="form-control" placeholder="Modelo" value="{{coche.modelo}}" autofocus>
+                </div>
+                <div class="form-group">
+                    <textarea name="description" rows="2" class="form-control" placeholder="Description">{{coche.description}}</textarea>
+                </div>
+                <div class="form-group">
+                    <button type="submit" class="btn btn-info btn-block">
+                        Guardar
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

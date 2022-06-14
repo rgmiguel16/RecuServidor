@@ -1,0 +1,26 @@
+<div class="container p-4">
+    <div class="row">
+        {{#each coches}}
+        <div class="col-md-3">
+            <div class="card text-center">
+                <div class="card-body">
+                    <p class="m-2">{{modelo}}</p>
+                    <p class="m-2">{{description}}</p>
+                    <p class="text-muted">
+                        {{created_at}}
+                    </p>
+                    <a class="btn btn-warning" href="/links/eliminar/{{id}}">
+                        Eliminar
+                    </a>
+                    <a class="btn btn-info" href="/links/editar/{{id}}">
+                        Editar
+                    </a>
+                </div>
+            </div>
+        </div>
+        {{/each}}
+        <a class="btn btn-primary col-md-7" href="/links/nuevo">
+            Nuevo coche
+        </a>
+    </div>
+</div>
